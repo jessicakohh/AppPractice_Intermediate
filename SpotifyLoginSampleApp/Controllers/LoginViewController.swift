@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -31,6 +32,7 @@ class LoginViewController: UIViewController {
         
         // 네비게이션 바 숨기기
         navigationController?.navigationBar.isHidden = true
+        
     }
     
     @IBAction func googleLoginButtonTapped(_ sender: UIButton) {

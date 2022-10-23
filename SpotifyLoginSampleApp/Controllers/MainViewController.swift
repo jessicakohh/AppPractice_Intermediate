@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainViewController: UIViewController {
 
@@ -21,6 +22,16 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         navigationController?.navigationBar.isHidden = false
+        
+        // 로그인 한 이메일이 메일에 들어섰을 때 표현
+        // 로그인을 했을 때 Firebase 인증을 통해서 로그인 한 사용자의 이메일을 가져오기
+        // 만약 정보가 없다면, "고객" 이라고 표시
+        let email = Auth.auth().currentUser?.email ?? "고객"
+        welcomeLabel.text = """
+        환영합니다.
+        \(email)님
+        """
+        
     }
 
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
