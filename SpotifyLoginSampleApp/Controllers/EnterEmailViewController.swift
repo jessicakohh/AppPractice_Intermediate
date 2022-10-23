@@ -13,7 +13,6 @@ class EnterEmailViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
-    
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
@@ -21,7 +20,7 @@ class EnterEmailViewController: UIViewController {
         
         nextButton.layer.cornerRadius = 30
         
-        // 처음에는 비활성화
+        // 처음에는 <다음> 버튼 비활성화
         nextButton.isEnabled = false
         
         emailTextField.delegate = self
@@ -46,12 +45,22 @@ class EnterEmailViewController: UIViewController {
     let password = passwordTextField.text ?? ""
         
         // 신규 사용자 생성
-        Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
+        Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in
             guard let self = self else { return }
             
-            // 로그인이 제대로 끝났을 때 화면을 보여줌
-            self.showMainViewController()
-            
+            if let error = error {
+                let code = (error as NSError).code
+                switch code {
+                case 17001: //이미 가입한 계정일 때
+                    // 로그인하기
+                    self.loginUser(withEmail: email, password: password)
+                default:
+                    self.errorMessageLabel.text = error.localizedDescription
+                }
+            } else {
+                // 에러가 없을 때 로그인이 제대로 끝났을 때 화면을 보여줌
+                self.showMainViewController()
+            }
         }
     }
     
@@ -60,8 +69,22 @@ class EnterEmailViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let mainViewController = storyboard.instantiateViewController(identifier: "MainViewController")
         mainViewController.modalPresentationStyle = .fullScreen
-        navigationController?.show(mainViewController, sender: nil)
+        self.navigationController?.show(mainViewController, sender: nil)
     }
+    
+    // FirebaseAuth를 통해 로그인을 할 수 있는 사이니 클롲 ㅓ추가
+    private func loginUser(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.errorMessageLabel.text = error.localizedDescription
+            } else {
+                self.showMainViewController()
+            }
+        }
+    }
+    
 }
 
 // MARK: - extension
@@ -76,9 +99,9 @@ extension EnterEmailViewController: UITextFieldDelegate {
     
     // 2. <다음> 버튼 활성화
     func textFieldDidEndEditing(_ textField: UITextField) {
-        let isEmailEmpty = emailTextField.text == ""
-        let isPasswordEmpty = passwordTextField.text == ""
-        nextButton.isEnabled = !isEmailEmpty && !isPasswordEmpty
+        let isEmailEmpty = self.emailTextField.text == ""
+        let isPasswordEmpty = self.passwordTextField.text == ""
+        self.nextButton.isEnabled = !isEmailEmpty && !isPasswordEmpty
     }
 }
 

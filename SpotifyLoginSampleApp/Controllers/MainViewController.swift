@@ -36,7 +36,15 @@ class MainViewController: UIViewController {
 
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
         
-        // 실제로 버튼을 누르면 로그인 뷰 컨트롤러로 넘어감
-        self.navigationController?.popToRootViewController(animated: true)
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            // 실제로 버튼을 누르면 로그인 뷰 컨트롤러로 넘어감 (오류가 없을 때, 즉 제대로 로그아웃이 되었을 때 실행)
+            self.navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+            print("Error: Signout \(signOutError.localizedDescription)")
+        }
+
     }
 }
