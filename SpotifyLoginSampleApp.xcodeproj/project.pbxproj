@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C86C07852904F32D00F794F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C07842904F32D00F794F8 /* LoginViewController.swift */; };
 		C874E8982904F12F007053A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874E8972904F12F007053A4 /* AppDelegate.swift */; };
 		C874E89A2904F12F007053A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874E8992904F12F007053A4 /* SceneDelegate.swift */; };
-		C874E89C2904F12F007053A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874E89B2904F12F007053A4 /* ViewController.swift */; };
 		C874E89F2904F12F007053A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C874E89D2904F12F007053A4 /* Main.storyboard */; };
 		C874E8A12904F132007053A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C874E8A02904F132007053A4 /* Assets.xcassets */; };
 		C874E8A42904F132007053A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C874E8A22904F132007053A4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C86C07842904F32D00F794F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C874E8942904F12F007053A4 /* SpotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C874E8972904F12F007053A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C874E8992904F12F007053A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C874E89B2904F12F007053A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C874E89E2904F12F007053A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C874E8A02904F132007053A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C874E8A32904F132007053A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C86C07802904F2E900F794F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C86C07842904F32D00F794F8 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C86C07812904F2F300F794F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C874E89D2904F12F007053A4 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C86C07822904F2F900F794F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C86C07832904F30A00F794F8 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				C874E8A22904F132007053A4 /* LaunchScreen.storyboard */,
+				C874E8A02904F132007053A4 /* Assets.xcassets */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
 		C874E88B2904F12F007053A4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +90,10 @@
 			children = (
 				C874E8972904F12F007053A4 /* AppDelegate.swift */,
 				C874E8992904F12F007053A4 /* SceneDelegate.swift */,
-				C874E89B2904F12F007053A4 /* ViewController.swift */,
-				C874E89D2904F12F007053A4 /* Main.storyboard */,
-				C874E8A02904F132007053A4 /* Assets.xcassets */,
-				C874E8A22904F132007053A4 /* LaunchScreen.storyboard */,
+				C86C07822904F2F900F794F8 /* Models */,
+				C86C07812904F2F300F794F8 /* Views */,
+				C86C07802904F2E900F794F8 /* Controllers */,
+				C86C07832904F30A00F794F8 /* Supports */,
 				C874E8A52904F132007053A4 /* Info.plist */,
 			);
 			path = SpotifyLoginSampleApp;
@@ -138,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C874E89C2904F12F007053A4 /* ViewController.swift in Sources */,
 				C874E8982904F12F007053A4 /* AppDelegate.swift in Sources */,
 				C874E89A2904F12F007053A4 /* SceneDelegate.swift in Sources */,
+				C86C07852904F32D00F794F8 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
