@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C808F7122905005200257A1F /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C808F7112905005200257A1F /* EnterEmailViewController.swift */; };
 		C86C07852904F32D00F794F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C07842904F32D00F794F8 /* LoginViewController.swift */; };
 		C874E8982904F12F007053A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874E8972904F12F007053A4 /* AppDelegate.swift */; };
 		C874E89A2904F12F007053A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874E8992904F12F007053A4 /* SceneDelegate.swift */; };
 		C874E89F2904F12F007053A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C874E89D2904F12F007053A4 /* Main.storyboard */; };
 		C874E8A12904F132007053A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C874E8A02904F132007053A4 /* Assets.xcassets */; };
 		C874E8A42904F132007053A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C874E8A22904F132007053A4 /* LaunchScreen.storyboard */; };
+		C8F416A42905076300272AE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F416A32905076300272AE0 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C808F7112905005200257A1F /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		C86C07842904F32D00F794F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C874E8942904F12F007053A4 /* SpotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C874E8972904F12F007053A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C874E8A02904F132007053A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C874E8A32904F132007053A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C874E8A52904F132007053A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F416A32905076300272AE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 			isa = PBXGroup;
 			children = (
 				C86C07842904F32D00F794F8 /* LoginViewController.swift */,
+				C808F7112905005200257A1F /* EnterEmailViewController.swift */,
+				C8F416A32905076300272AE0 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,7 +178,9 @@
 			files = (
 				C874E8982904F12F007053A4 /* AppDelegate.swift in Sources */,
 				C874E89A2904F12F007053A4 /* SceneDelegate.swift in Sources */,
+				C808F7122905005200257A1F /* EnterEmailViewController.swift in Sources */,
 				C86C07852904F32D00F794F8 /* LoginViewController.swift in Sources */,
+				C8F416A42905076300272AE0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
