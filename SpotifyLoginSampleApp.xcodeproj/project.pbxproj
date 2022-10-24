@@ -32,6 +32,7 @@
 		C874E8A02904F132007053A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C874E8A32904F132007053A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C874E8A52904F132007053A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8AAF0BC290603B500340AA5 /* SpotifyLoginSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotifyLoginSampleApp.entitlements; sourceTree = "<group>"; };
 		C8F416A32905076300272AE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C8F416A529050A8500272AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -62,7 +63,6 @@
 				71BB6DB6B974F5D3DA7FEAA7 /* Pods-SpotifyLoginSampleApp.debug.xcconfig */,
 				20BB7BDDB9FE38FE699B0D7A /* Pods-SpotifyLoginSampleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,6 +121,7 @@
 		C874E8962904F12F007053A4 /* SpotifyLoginSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8AAF0BC290603B500340AA5 /* SpotifyLoginSampleApp.entitlements */,
 				C874E8972904F12F007053A4 /* AppDelegate.swift */,
 				C874E8992904F12F007053A4 /* SceneDelegate.swift */,
 				C86C07822904F2F900F794F8 /* Models */,
@@ -399,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpotifyLoginSampleApp/SpotifyLoginSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C52UTF3KCV;
@@ -428,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpotifyLoginSampleApp/SpotifyLoginSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C52UTF3KCV;
