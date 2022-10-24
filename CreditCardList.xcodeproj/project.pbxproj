@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C88571C0290658EB004DBFE4 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88571BF290658EB004DBFE4 /* CardListViewController.swift */; };
+		C88571C629065D57004DBFE4 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88571C529065D57004DBFE4 /* CreditCard.swift */; };
+		C88571C929066003004DBFE4 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88571C729066003004DBFE4 /* CardListCell.swift */; };
+		C88571CA29066003004DBFE4 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C88571C829066003004DBFE4 /* CardListCell.xib */; };
 		C8F116D62906538300CF9503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F116D52906538300CF9503 /* AppDelegate.swift */; };
 		C8F116D82906538300CF9503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F116D72906538300CF9503 /* SceneDelegate.swift */; };
-		C8F116DA2906538300CF9503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F116D92906538300CF9503 /* ViewController.swift */; };
 		C8F116DD2906538300CF9503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F116DB2906538300CF9503 /* Main.storyboard */; };
 		C8F116DF2906538400CF9503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F116DE2906538400CF9503 /* Assets.xcassets */; };
 		C8F116E22906538400CF9503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F116E02906538400CF9503 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C88571BF290658EB004DBFE4 /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		C88571C529065D57004DBFE4 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		C88571C729066003004DBFE4 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		C88571C829066003004DBFE4 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
 		C8F116D22906538300CF9503 /* CreditCardList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F116D52906538300CF9503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8F116D72906538300CF9503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8F116D92906538300CF9503 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8F116DC2906538300CF9503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8F116DE2906538400CF9503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8F116E12906538400CF9503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C88571C1290658F1004DBFE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C88571BF290658EB004DBFE4 /* CardListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C88571C2290658F8004DBFE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8F116DB2906538300CF9503 /* Main.storyboard */,
+				C88571C729066003004DBFE4 /* CardListCell.swift */,
+				C88571C829066003004DBFE4 /* CardListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C88571C3290658FD004DBFE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C88571C529065D57004DBFE4 /* CreditCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C88571C42906592F004DBFE4 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				C8F116DE2906538400CF9503 /* Assets.xcassets */,
+				C8F116E02906538400CF9503 /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
 		C8F116C92906538300CF9503 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +99,10 @@
 			children = (
 				C8F116D52906538300CF9503 /* AppDelegate.swift */,
 				C8F116D72906538300CF9503 /* SceneDelegate.swift */,
-				C8F116D92906538300CF9503 /* ViewController.swift */,
-				C8F116DB2906538300CF9503 /* Main.storyboard */,
-				C8F116DE2906538400CF9503 /* Assets.xcassets */,
-				C8F116E02906538400CF9503 /* LaunchScreen.storyboard */,
+				C88571C3290658FD004DBFE4 /* Models */,
+				C88571C2290658F8004DBFE4 /* Views */,
+				C88571C1290658F1004DBFE4 /* Controllers */,
+				C88571C42906592F004DBFE4 /* Supports */,
 				C8F116E32906538400CF9503 /* Info.plist */,
 			);
 			path = CreditCardList;
@@ -128,6 +169,7 @@
 				C8F116E22906538400CF9503 /* LaunchScreen.storyboard in Resources */,
 				C8F116DF2906538400CF9503 /* Assets.xcassets in Resources */,
 				C8F116DD2906538300CF9503 /* Main.storyboard in Resources */,
+				C88571CA29066003004DBFE4 /* CardListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8F116DA2906538300CF9503 /* ViewController.swift in Sources */,
+				C88571C629065D57004DBFE4 /* CreditCard.swift in Sources */,
+				C88571C929066003004DBFE4 /* CardListCell.swift in Sources */,
+				C88571C0290658EB004DBFE4 /* CardListViewController.swift in Sources */,
 				C8F116D62906538300CF9503 /* AppDelegate.swift in Sources */,
 				C8F116D82906538300CF9503 /* SceneDelegate.swift in Sources */,
 			);
