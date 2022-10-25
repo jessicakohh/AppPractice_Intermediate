@@ -17,6 +17,7 @@
 		C839CED22907B95A005DD6D1 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C839CED02907B95A005DD6D1 /* NoticeViewController.swift */; };
 		C839CED32907B95A005DD6D1 /* NoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C839CED12907B95A005DD6D1 /* NoticeViewController.xib */; };
 		C839CED52907BDF6005DD6D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C839CED42907BDF6005DD6D1 /* GoogleService-Info.plist */; };
+		C839CED72907BFF9005DD6D1 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C839CED62907BFF9005DD6D1 /* RemoteConfigDefaults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C839CED02907B95A005DD6D1 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		C839CED12907B95A005DD6D1 /* NoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeViewController.xib; sourceTree = "<group>"; };
 		C839CED42907BDF6005DD6D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C839CED62907BFF9005DD6D1 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		E4C6E7A9736936463FE0E697 /* Pods-Notice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notice.debug.xcconfig"; path = "Target Support Files/Pods-Notice/Pods-Notice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				C82DFFB22907B7E700D38BB0 /* Assets.xcassets */,
 				C82DFFB72907B7E700D38BB0 /* Info.plist */,
 				C839CED42907BDF6005DD6D1 /* GoogleService-Info.plist */,
+				C839CED62907BFF9005DD6D1 /* RemoteConfigDefaults.plist */,
 			);
 			path = Notice;
 			sourceTree = "<group>";
@@ -129,7 +132,6 @@
 				E4C6E7A9736936463FE0E697 /* Pods-Notice.debug.xcconfig */,
 				C536CB27D852BB6838D26349 /* Pods-Notice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -193,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C839CED72907BFF9005DD6D1 /* RemoteConfigDefaults.plist in Resources */,
 				C82DFFB62907B7E700D38BB0 /* LaunchScreen.storyboard in Resources */,
 				C82DFFB32907B7E700D38BB0 /* Assets.xcassets in Resources */,
 				C839CED52907BDF6005DD6D1 /* GoogleService-Info.plist in Resources */,
@@ -409,6 +412,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +445,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
