@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82D130D2907E8C500D60753 /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D130B2907E8C500D60753 /* AlertListCell.swift */; };
+		C82D130E2907E8C500D60753 /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C82D130C2907E8C500D60753 /* AlertListCell.xib */; };
+		C82D13102908AA7500D60753 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D130F2908AA7500D60753 /* Alert.swift */; };
+		C82D13122909006700D60753 /* AddAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D13112909006700D60753 /* AddAlertViewController.swift */; };
 		C839CEE52907E291005DD6D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C839CEE42907E291005DD6D1 /* AppDelegate.swift */; };
 		C839CEE72907E291005DD6D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C839CEE62907E291005DD6D1 /* SceneDelegate.swift */; };
-		C839CEE92907E291005DD6D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C839CEE82907E291005DD6D1 /* ViewController.swift */; };
 		C839CEEC2907E291005DD6D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C839CEEA2907E291005DD6D1 /* Main.storyboard */; };
 		C839CEEE2907E292005DD6D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C839CEED2907E292005DD6D1 /* Assets.xcassets */; };
 		C839CEF12907E292005DD6D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C839CEEF2907E292005DD6D1 /* LaunchScreen.storyboard */; };
+		C861E92D2907E71100F3D264 /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C861E92C2907E71100F3D264 /* AlertListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C82D130B2907E8C500D60753 /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
+		C82D130C2907E8C500D60753 /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
+		C82D130F2908AA7500D60753 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C82D13112909006700D60753 /* AddAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertViewController.swift; sourceTree = "<group>"; };
 		C839CEE12907E291005DD6D1 /* Drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C839CEE42907E291005DD6D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C839CEE62907E291005DD6D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C839CEE82907E291005DD6D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C839CEEB2907E291005DD6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C839CEED2907E292005DD6D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C839CEF02907E292005DD6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C839CEF22907E292005DD6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C861E92C2907E71100F3D264 /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C80EBA502907E4C90067444E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C861E92C2907E71100F3D264 /* AlertListViewController.swift */,
+				C82D13112909006700D60753 /* AddAlertViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C80EBA512907E4D10067444E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C839CEEA2907E291005DD6D1 /* Main.storyboard */,
+				C82D130B2907E8C500D60753 /* AlertListCell.swift */,
+				C82D130C2907E8C500D60753 /* AlertListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C80EBA522907E4D70067444E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C82D130F2908AA7500D60753 /* Alert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C839CED82907E291005DD6D1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +93,9 @@
 			children = (
 				C839CEE42907E291005DD6D1 /* AppDelegate.swift */,
 				C839CEE62907E291005DD6D1 /* SceneDelegate.swift */,
-				C839CEE82907E291005DD6D1 /* ViewController.swift */,
-				C839CEEA2907E291005DD6D1 /* Main.storyboard */,
+				C80EBA522907E4D70067444E /* Models */,
+				C80EBA512907E4D10067444E /* Views */,
+				C80EBA502907E4C90067444E /* Controllers */,
 				C839CEED2907E292005DD6D1 /* Assets.xcassets */,
 				C839CEEF2907E292005DD6D1 /* LaunchScreen.storyboard */,
 				C839CEF22907E292005DD6D1 /* Info.plist */,
@@ -127,6 +163,7 @@
 			files = (
 				C839CEF12907E292005DD6D1 /* LaunchScreen.storyboard in Resources */,
 				C839CEEE2907E292005DD6D1 /* Assets.xcassets in Resources */,
+				C82D130E2907E8C500D60753 /* AlertListCell.xib in Resources */,
 				C839CEEC2907E291005DD6D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C839CEE92907E291005DD6D1 /* ViewController.swift in Sources */,
 				C839CEE52907E291005DD6D1 /* AppDelegate.swift in Sources */,
 				C839CEE72907E291005DD6D1 /* SceneDelegate.swift in Sources */,
+				C82D130D2907E8C500D60753 /* AlertListCell.swift in Sources */,
+				C82D13102908AA7500D60753 /* Alert.swift in Sources */,
+				C861E92D2907E71100F3D264 /* AlertListViewController.swift in Sources */,
+				C82D13122909006700D60753 /* AddAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
