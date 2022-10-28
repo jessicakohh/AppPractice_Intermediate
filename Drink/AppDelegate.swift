@@ -6,15 +6,26 @@
 //
 
 import UIKit
+import NotificationCenter
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var userNotificationCenter: UNUserNotificationCenter?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+        let authrizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
+        userNotificationCenter?.requestAuthorization(options: authrizationOptions) { _, error in
+            if let error = error {
+                print("인증 승인 요청 에러: \(error.localizedDescription)")
+            }
+        }
+                                                     
+            return true
     }
 
     // MARK: UISceneSession Lifecycle
@@ -34,3 +45,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+
+// Notification 전에 어떻게 핸들링을 해줄 것이냐
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .list, .badge, .sound])
+        
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
+    
+}
