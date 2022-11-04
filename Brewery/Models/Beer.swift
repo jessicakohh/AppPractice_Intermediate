@@ -14,12 +14,11 @@ struct Beer: Decodable {
     
     var tagLine: String {
         let tags = taglineString?.components(separatedBy: ". ")
-        let hashtags = tags?.map {
-            "#" + $0.replacingOccurrences(of: " ", with: "")
-                .replacingOccurrences(of: ".", with: "")
-                .replacingOccurrences(of: ",", with: " #")
+        let hashtags = tags?.map { "#" + $0.replacingOccurrences(of: " ", with: "")
+            .replacingOccurrences(of: ".", with: "")
+            .replacingOccurrences(of: ",", with: " #")
         }
-        return hashtags?.joined(separator:" ") ?? "" // #tag #good #hello 이런식으로
+        return hashtags?.joined(separator: " ") ?? ""
     }
     
     enum CodingKeys: String, CodingKey {
@@ -27,7 +26,6 @@ struct Beer: Decodable {
         case taglineString = "tagline"
         case imageURL = "image_url"
         case brewersTips = "brewers_tips"
-        case foodParing = "food_paring"
-        
+        case foodParing = "food_pairing"
     }
 }
