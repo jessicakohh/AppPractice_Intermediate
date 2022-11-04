@@ -12,6 +12,16 @@ struct Beer: Decodable {
     let name, taglineString, description, brewersTips, imageURL: String?
     let foodParing: [String]?
     
+    var tagLine: String {
+        let tags = taglineString?.components(separatedBy: ". ")
+        let hashtags = tags?.map {
+            "#" + $0.replacingOccurrences(of: " ", with: "")
+                .replacingOccurrences(of: ".", with: "")
+                .replacingOccurrences(of: ",", with: " #")
+        }
+        return hashtags?.joined(separator:" ") ?? "" // #tag #good #hello 이런식으로
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id, name, description
         case taglineString = "tagline"
