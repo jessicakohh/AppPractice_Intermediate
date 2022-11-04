@@ -15,6 +15,8 @@
 		C887E5D92914B28400D5D9C2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C887E5D82914B28400D5D9C2 /* SnapKit */; };
 		C887E5DC2914B3E100D5D9C2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C887E5DB2914B3E100D5D9C2 /* Kingfisher */; };
 		C887E5DE2914B44500D5D9C2 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887E5DD2914B44500D5D9C2 /* Beer.swift */; };
+		C887E5E02914BE2E00D5D9C2 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887E5DF2914BE2E00D5D9C2 /* BeerListCell.swift */; };
+		C88964152914CDD400F494E6 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88964142914CDD400F494E6 /* BeerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C887E5CB2914AF8300D5D9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C887E5D52914B0F200D5D9C2 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		C887E5DD2914B44500D5D9C2 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		C887E5DF2914BE2E00D5D9C2 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
+		C88964142914CDD400F494E6 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C887E5D52914B0F200D5D9C2 /* BeerListViewController.swift */,
+				C88964142914CDD400F494E6 /* BeerDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 		C887E5D32914B08900D5D9C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C887E5DF2914BE2E00D5D9C2 /* BeerListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C887E5D62914B0F200D5D9C2 /* BeerListViewController.swift in Sources */,
+				C88964152914CDD400F494E6 /* BeerDetailViewController.swift in Sources */,
 				C887E5BE2914AF8100D5D9C2 /* AppDelegate.swift in Sources */,
 				C887E5C02914AF8100D5D9C2 /* SceneDelegate.swift in Sources */,
 				C887E5DE2914B44500D5D9C2 /* Beer.swift in Sources */,
+				C887E5E02914BE2E00D5D9C2 /* BeerListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
