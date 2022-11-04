@@ -23,3 +23,20 @@
  - Firebase Cloud Messaging (FCM)  
       * APNs : 원격 알림 요청 관리  
      * FCM : 원격 알림 메시지 관리, 전송, 타겟팅   
+
+
+
+###  6. NetflixStyleSampleApp  
+   - UICollectionView  
+   - Layout  
+   - FlowLayout  
+   - SnapKit  
+   - Swift Package Manager   
+    - ContentCollectionViewMainCell   
+
+
+###  7. Brewery  
+   - OSI Model   
+   - URLSession  
+   - Postman  
+   - GCD   
